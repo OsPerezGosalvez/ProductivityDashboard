@@ -210,9 +210,33 @@ th {
 }
 
 .opportunity {
-    background: #f0f9ff;
-    border: 1px solid #c9e7ff;
-    border-left: 4px solid #2563eb;
+    background: linear-gradient(135deg, #ffffff 0%, #f5f9fe 100%);
+    border: 1px solid #d6e3f2;
+    border-radius: 12px;
+    padding: 18px;
+    min-height: 125px;
+    box-sizing: border-box;
+}
+
+.opportunity-number {
+    font-size: 12px;
+    font-weight: 700;
+    color: #2563eb;
+    letter-spacing: 0.8px;
+    margin-bottom: 7px;
+}
+
+.opportunity-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #123f82;
+    margin-bottom: 7px;
+}
+
+.opportunity-text {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #526273;
 }
 
 .onboarding-intro {
@@ -567,8 +591,15 @@ button:hover,
 }
 
 .opportunity {
-    border-left: 4px solid #2563eb;
-    background: #f4f8fe;
+    display: flex;
+    flex-direction: column;
+}
+
+.efficiency-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 14px;
 }
 
 .deliverable-detail {
@@ -790,25 +821,37 @@ button:hover,
 <div class="section">
 
 <h2>Efficiency Opportunities</h2>
-
+<div class="efficiency-grid">
 <div class="opportunity">
-<strong>1. SLA Optimization:</strong>
-Review deliverables exceeding the 60-minute SLA and identify recurring causes.
+    <div class="opportunity-number">01</div>
+    <div class="opportunity-title">SLA Optimization</div>
+    <div class="opportunity-text">
+        Review deliverables exceeding the 60-minute SLA and identify recurring causes.
+    </div>
 </div>
 
 <div class="opportunity">
-<strong>2. Workload Balance:</strong>
-Compare workload and average handling time across team members.
+    <div class="opportunity-number">02</div>
+    <div class="opportunity-title">Workload Balance</div>
+    <div class="opportunity-text">
+        Compare workload and average handling time across team members.
+    </div>
 </div>
 
 <div class="opportunity">
-<strong>3. Capacity Planning:</strong>
-Use workload trends to determine when additional capacity or prioritization may be required.
+    <div class="opportunity-number">03</div>
+    <div class="opportunity-title">Capacity Planning</div>
+    <div class="opportunity-text">
+        Use workload trends to determine when additional capacity or prioritization may be required.
+    </div>
 </div>
 
 <div class="opportunity">
-<strong>4. Training & Learning:</strong>
-Training time: TBD - to be defined based on team needs and available capacity.
+    <div class="opportunity-number">04</div>
+    <div class="opportunity-title">Training &amp; Learning</div>
+    <div class="opportunity-text">
+        Training time: TBD - to be defined based on team needs and available capacity.
+    </div>
 </div>
 
 </div>
